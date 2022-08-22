@@ -9,3 +9,12 @@ function getComputerChoice() {
     return choice;
 
 }
+
+function playRound(playerSelection, computerSelection) {
+
+    playerSelection = playerSelection.toLowerCase();
+    computerSelection = getComputerChoice();
+
+    return playerSelection + ' ' + computerSelection;
+
+}
