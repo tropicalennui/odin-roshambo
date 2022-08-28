@@ -1,0 +1,46 @@
+body {
+    background-color: #212121;
+    color: white;
+    margin: 150px;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 600px;
+}
+
+#title, #tiles {
+    font-family: 'Bangers', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    font-size: 72px;
+    padding: 50px;
+}
+
+#btnStart {
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 72px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid white;
+    background-color: #484848;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.indieflower {
+    font-family: 'Indie Flower', sans-serif;
+}
+
+.gloriahallelujah {
+    font-family: 'Gloria Hallelujah', sans-serif;
+}
