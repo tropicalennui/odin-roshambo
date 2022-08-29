@@ -12,7 +12,6 @@ body {
 }
 
 #startBtn {
-    font-family: 'Bangers', sans-serif;
     font-size: 72px;
     display: flex;
     align-items: center;
@@ -28,20 +27,19 @@ body {
 #gameWrapper {
     display: flex;
     flex-direction: column;
-    margin: 100px;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    min-width: 600px;
+    height: 97Vh;
+    justify-content: center;
+    align-items: center;
 }
 
-#title, #tiles {
-    font-family: 'Bangers', sans-serif;
+#title, #tiles, .tile {
     display: flex;
-    justify-content: space-around;
     font-size: 72px;
-    padding: 50px;
+    margin: 10px;
+}
+
+.bangers {
+    font-family: 'Bangers', sans-serif;
 }
 
 .indieflower {
