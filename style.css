@@ -1,10 +1,31 @@
 body {
     background-color: #212121;
     color: white;
-    margin: 150px;
+    margin: auto;
 }
 
-#wrapper {
+#startGame {
+    display: flex;
+    height: 97Vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#startBtn {
+    font-family: 'Bangers', sans-serif;
+    font-size: 72px;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #484848;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#gameWrapper {
     display: flex;
     flex-direction: column;
     margin: 100px;
@@ -21,20 +42,6 @@ body {
     justify-content: space-around;
     font-size: 72px;
     padding: 50px;
-}
-
-#btnStart {
-    font-family: 'Indie Flower', sans-serif;
-    font-size: 72px;
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid white;
-    background-color: #484848;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: auto;
 }
 
 .indieflower {
