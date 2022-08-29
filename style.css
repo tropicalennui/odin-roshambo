@@ -32,7 +32,7 @@ body {
     align-items: center;
 }
 
-#title, #tiles, .tile {
+#title, #tiles, #rock, #paper, #scissors {
     display: flex;
     font-size: 72px;
     margin: 10px;

@@ -1,5 +1,5 @@
-function playRound() {
-    playerChoice = arguments;
+function playRound(choice) {
+    playerChoice = choice;
     computerChoice = getComputerChoice();
     message = '';
 
@@ -12,6 +12,8 @@ function playRound() {
     } else {
         message = 'You lose! ' + computerChoice + ' beats ' + playerChoice;
     }
+
+    console.log(message);
 
 }
 
@@ -35,20 +37,14 @@ function newGame(){
             const tiles = document.createElement('div');
             tiles.setAttribute('id','tiles');
         gameWrapper.appendChild(tiles);
-                const rock = document.createElement('div');
                 rock.setAttribute('id','rock');
-                rock.classList.add('tile');
-                rock.innerHTML = "<i class='fa-solid fa-hand-back-fist fa-flip-horizontal'></i>";
+                rock.innerHTML = "<i class='fa-solid fa-hand-back-fist fa-flip-horizontal choice'></i>";
             tiles.appendChild(rock);
-                const paper = document.createElement('div');
-                paper.classList.add('tile');
                 paper.setAttribute('id','paper');
-                paper.innerHTML = "<i class='fa-solid fa-hand'></i>";
+                paper.innerHTML = "<i class='fa-solid fa-hand choice'></i>";
             tiles.appendChild(paper);
-                const scissors = document.createElement('div');
-                scissors.classList.add('tile');
                 scissors.setAttribute('id','scissors');
-                scissors.innerHTML = "<i class='fa-solid fa-hand-scissors'></i>";
+                scissors.innerHTML = "<i class='fa-solid fa-hand-scissors choice'></i>";
             tiles.appendChild(scissors);
 }
 
@@ -60,3 +56,18 @@ function startGame(){
 
 const startBtn = document.querySelector('#startBtn');
 startBtn.addEventListener('click', startGame);
+
+const rock = document.createElement('div');
+rock.addEventListener('click',function(e) {
+    playRound('rock');
+});
+
+const paper = document.createElement('div');
+paper.addEventListener('click',function(e) {
+    playRound('paper');
+});
+
+const scissors = document.createElement('div');
+scissors.addEventListener('click',function(e) {
+    playRound('scissors');
+});
