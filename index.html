@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset='UTF-8'>
-  <link rel='stylesheet' 
-        href='https://fonts.googleapis.com/css?family=Indie+Flower'>
-  <link rel='stylesheet' 
-        href='https://fonts.googleapis.com/css?family=Bangers'>
-        <link rel='stylesheet' 
-        href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah'>
-  <link rel='stylesheet' 
-        href='style.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Indie+Flower'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bangers'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah'>
+  <link rel='stylesheet' href='style.css'>
   <title>Roshambo</title>
 </head>
+
 <body>
 
-<div id='gameWrapper' class="hide">
-  <div id='title' class="bangers">Choose your weapon</div>
-  <div id='tiles'>
-    <div id='rock'>
-      <i class='fa-solid fa-hand-back-fist fa-flip-horizontal'></i>
+  <div id='gameWrapper' class="hide">
+    <div id='title' class="bangers">Choose your weapon</div>
+    <div id='tiles'>
+      <div id='rock' class="tile">
+        <i class='fa-solid fa-hand-back-fist fa-flip-horizontal'></i>
+      </div>
+      <div id='paper' class="tile">
+        <i class='fa-solid fa-hand'></i>
+      </div>
+      <div id='scissors' class="tile">
+        <i class='fa-solid fa-hand-scissors'></i>
+      </div>
     </div>
-    <div id='paper'>
-      <i class='fa-solid fa-hand'></i>
+    <div id="countWrapper">
+      <div class="countColumn gloriahallelujah">
+        <div class="countTitle" class="">player</div>
+        <div id="player" class="count"></div>
+      </div>
+      <div class="countColumn gloriahallelujah">
+        <div class="countTitle">computer</div>
+        <div id="computer" class="count"></div>
+      </div>
     </div>
-    <div id='scissors'>
-      <i class='fa-solid fa-hand-scissors'></i>
-    </div>
+    <div id="score" class="gloriahallelujah">&nbsp;</div>
+    <div id="result" class="gloriahallelujah">&nbsp;</div>
   </div>
-</div>
 
-<div id="startGame" class="show">
-  <button id='startBtn' class='bangers'>start</button>
-</div>
+  <div id="startGame" class="show">
+    <button id='startBtn' class='bangers'>start</button>
+  </div>
 
-<script src='https://kit.fontawesome.com/9cb328f943.js' crossorigin='anonymous'></script>
-<script src='roshambo.js'></script>
+  <script src='https://kit.fontawesome.com/9cb328f943.js' crossorigin='anonymous'></script>
+  <script src='roshambo.js'></script>
 
 </body>
+
 </html>
